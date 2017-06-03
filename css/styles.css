@@ -25,30 +25,31 @@
   border-style: solid;
   border-width: 5px;
 }
-#top-left {
+#btn1 {
   background-color: #ECD078;
   border-top-left-radius: 100%;
 }
 
-#top-right {
+#btn2 {
   background-color: #D95B43;
   border-top-right-radius: 100%;
   position: relative;
   left: -5px;
 }
 
-#bottom-right {
+#btn3 {
+  background-color: #53777A;
+  border-bottom-left-radius: 100%;
+  position: relative;
+  top:-5px;
+}
+
+
+#btn4 {
   background-color: #542437;
   border-bottom-right-radius: 100%;
   position: relative;
   top:-5px;
   left: -5px;
 
-}
-
-#bottom-left {
-  background-color: #53777A;
-  border-bottom-left-radius: 100%;
-  position: relative;
-  top:-5px;
 }
