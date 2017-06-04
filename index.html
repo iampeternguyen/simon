@@ -19,15 +19,34 @@
 </head>
 
 <body>
+  <audio id="sound1" src="sounds\simonSound1.mp3" type="audio/mpeg"></audio>
+  <audio id="sound2" src="sounds\simonSound2.mp3" type="audio/mpeg"></audio>
+  <audio id="sound3" src="sounds\simonSound3.mp3" type="audio/mpeg"></audio>
+  <audio id="sound4" src="sounds\simonSound4.mp3" type="audio/mpeg"></audio>
+  <audio id="error" src="sounds\beep2.mp3" type="audio/mpeg"></audio>
+
   <div class="fluid-container text-center">
     <div class="board">
-      <div id="btn1" class="gamebtns"></div>
-      <div id="btn2" class="gamebtns"></div><br>
-      <div id="btn3" class="gamebtns"></div>
-      <div id="btn4" class="gamebtns"></div>
-      <div id="controls" class="gamebtns"> </div>
+      <div id="btn1" class="gamebtns" onclick="pressButton(1)"></div>
+      <div id="btn2" class="gamebtns" onclick="pressButton(2)"></div><br>
+      <div id="btn3" class="gamebtns" onclick="pressButton(3)"></div>
+      <div id="btn4" class="gamebtns" onclick="pressButton(4)"></div>
+      <div id="controls" class="gamebtns">
+        <h2>Simon</h2>
+        <span id="count" class="well"> -- </span>
+        <span>
+          <table>
+            <tr><td class="space"></td><td></td><td class="space"></td><td align="center"><div id="strictIND"></div></td></tr>
+            <tr class="middle"></tr>
+            <tr class="middle"><td class="space"></td><td id="startBTN" class="gBTNs" onclick="startGame()"></td><td class="space"></td><td id="strictBTN" class="gBTNs" onclick="strictMode()"></td></tr>
+            <tr><td class="space"></td><td>start</td><td class="space"></td><td>strict</td></tr>
+          </table>
+        </span>
+          <br><div id="onoff" onclick="switchOn()">off <div id="off" class="onoff"></div><div id="on" class="onoff"></div> on</div>
+      </div>
   </div>
 </div>
+<div id="winner">Congratulations! You beat Simon! </div>
 
 
 </body>

@@ -1,25 +1,92 @@
 
 .board {
   padding-top: 200px;
+  color:white;
+}
+
+#count {
+  float:left;
+  margin-left: 15px;
+  color:black;
+}
+
+.onoff {
+  height:15px;
+  width:15px;
+  background-color: black;
+  display: inline-block;
+  border-style: solid;
+  border-color: black;
 }
 
 
+#strictIND {
+  height: 10px;
+  width: 10px;
+  background-color: #000;
+  border-radius: 50%
+
+}
+
+#count {
+  width:50px;
+}
+.space {
+  width: 15px;
+}
+.middle{
+  height:3px;
+}
+
+.gBTNs {
+  height:30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#startBTN {
+  background-color: #FF6B6B;
+}
+
+#winner {
+  color:black;
+  margin:auto;
+  text-align: center;
+  height: 40px;
+  width: 250px;
+  background-color: #F1F2CE;
+  line-height: 45px;
+  position: relative;
+  top:-700px;
+  visibility: hidden;
+}
+
+#strictBTN {
+  background-color: #C7F464;
+}
+#onoff {
+  padding-top: 5px;
+}
+
+#off {
+  background-color: #87E5FF;
+}
 
 #controls {
   background-color: #9190B8;
-  width: 150px;
-  height:150px;
+  width: 200px;
+  height:200px;
   border-radius: 50%;
   position: relative;
   margin: 0 50%;
-  left: -80px;
-  top:-280px;
+  left: -100px;
+  top:-425px;
   border-width: 8px;
 }
 
 .gamebtns {
-  width: 200px;
-  height:200px;
+  width: 300px;
+  height:300px;
   display: inline-block;
   border-color: #F1F2CE;
   border-style: solid;
